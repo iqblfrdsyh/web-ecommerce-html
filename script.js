@@ -162,7 +162,7 @@ dataCategories.forEach((data) => {
 });
 
 function categoryComponent(image, category) {
-  return `<figure class="flex flex-col items-center gap-2 w-[60px]">
+  return `<figure class="flex flex-col items-center gap-2 w-[60px] hover:cursor-pointer">
     <div class="p-3 bg-gray-200 rounded-full w-[50px] flex items-center justify-center">
         <img src="${image}" alt="1" width="27px">
     </div>
