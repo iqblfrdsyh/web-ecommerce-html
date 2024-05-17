@@ -180,7 +180,7 @@ function cardComponent(
   total,
   sold
 ) {
-  return ` <div class="w-[280px] h-[380px] border-2 shadow-md rounded-md">
+  return ` <div class="w-[300px] h-[380px] border-2 shadow-md rounded-md">
     <figure class="flex justify-center bg-gray-200 p-5 hover:cursor-pointer h-[180px]">
         <img src="${image}" alt=4${name}>
     </figure>
