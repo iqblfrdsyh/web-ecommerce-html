@@ -1,3 +1,5 @@
+alert("Content Baru 70% & responsive mobile baru navbar & footer.");
+
 const dropdownClicked = (dropdownType) => {
   console.log("clicked");
   const btn = document.getElementById("dropdownItem");
@@ -133,7 +135,7 @@ const dataProductsFS = [
     image: "./src/images/product-images/Image (5).png",
     name: "Neve Strix Pro L123 (2021) - TP399K 1TB",
     category: "Computer & Laptop",
-    price1: 500.50,
+    price1: 500.5,
     price2: 451,
     disc: 30,
     total: 1000,
