@@ -335,13 +335,13 @@ function cardComponent(
 }
 
 function cardProductComponent(product) {
-  return `<div class="w-[175px] h-[315px] sm:w-[300px] sm:h-[375px] border-2 shadow-md rounded-md">
+  return `<div class="w-[170px] h-[305px] sm:w-[300px] sm:h-[375px] border-2 shadow-md rounded-md">
   <figure class="flex justify-center bg-gray-200 p-5 items-center hover:cursor-pointer h-[160px] sm:h-[180px]">
       <img src="${product.image}" alt="product-image" class="w-[80px] h-[60px] sm:w-[180px] sm:h-[140px]">
   </figure>
   <div class="p-2 sm:p-4 ralative">
       <span class="text-[10px] sm:text-[15px] bg-purple-200 py-1 px-2 rounded-md">${product.category}</span>
-      <h3 class="my-2 text-[14px] sm:text-[18px] font-semibold sm:overflow-visible sm:whitespace-normal">${product.name}</h3>
+      <h3 class="my-2 text-[14px] sm:text-[18px] font-semibold truncate sm:overflow-visible sm:whitespace-normal">${product.name}</h3>
       <div class="flex items-center justify-between">
           <p class="text-[15px] sm:text-[17px]">$${product.price}</p>
           <figure class="flex gap-1 items-center">
@@ -349,7 +349,7 @@ function cardProductComponent(product) {
               <figcaption class="text-[13px] sm:text-[16px]">${product.rating}</figcaption>
           </figure>
       </div>
-      <div class="flex justify-between items-center mt-2 sm:mt-5">
+      <div class="flex justify-between items-center mt-4 sm:mt-5">
           <figure class="flex gap-1 items-center">
               <img src="./src/images/icons/Frame (1).png" alt="location-icon" class="w-[14px] h-[14px] sm:w-[18px] sm:h-[18px]">
               <figcaption class="text-[13px] sm:text-[16px]">${product.location}</figcaption>
