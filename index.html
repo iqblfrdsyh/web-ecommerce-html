@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zero Shop</title>
-    <link rel="shortcut icon" href="./src/images/icon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/images/icon.png" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -36,10 +36,10 @@
 </head>
 
 <body>
-    <div class="mb-[235px] sm:mb-[150px]">
+    <div class="mb-[80px] sm:mb-[150px]">
         <div class="fixed w-full top-0 z-50">
             <div
-                class="bg-gray-900 px-4 py-3 w-full text-white sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-10">
+                class="hidden bg-gray-900 px-4 py-3 w-full text-white sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-10 sm:block">
                 <div class="flex flex-col sm:flex-row sm:items-center sm:gap-3">
                     <p class="text-center font-medium text-lg sm:text-left sm:me-2 me-1">
                         Open Sponsorship
@@ -51,8 +51,9 @@
                     </div>
                 </div>
 
-                <div class="flex flex-wrap gap-3 justify-center mt-2 text-[15px] sm:gap-7 sm:justify-start sm:mt-0 sm:text-[18]>
-            <a href=" #">About Zero</a>
+                <div class="flex flex-wrap gap-3 justify-center mt-2 text-[15px]
+          sm:gap-7 sm:justify-start sm:mt-0 sm:text-[18]"">
+          <a href=" #">About Zero</a>
                     <a href="#">Mitra Zero</a>
                     <a href="#">Start Selling</a>
                     <a href="#">Promo</a>
@@ -70,8 +71,6 @@
                                 aria-controls="mobile-menu" aria-expanded="false"
                                 onclick="dropdownClicked('mobile-menu')">
                                 <span class="absolute -inset-0.5"></span>
-                                <span class="sr-only">Open main menu</span>
-
                                 <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                     stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -86,8 +85,10 @@
                         </div>
                         <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                             <div class="flex flex-shrink-0 items-center gap-2">
-                                <img class="h-8 w-auto" src="./src/images/icon.png" alt="zero-icon">
-                                <h2 class="text-[24px] font-semibold">Zero</h2>
+                                <img class="h-8 w-auto" src="./src/images/icon.png" alt="zero-icon" />
+                                <h2 class="text-[19px] font-semibold sm:text-[23px]">
+                                    Zero Shop
+                                </h2>
                             </div>
                             <div class="hidden sm:ml-6 sm:block">
                                 <div class="flex space-x-4 items-center">
@@ -135,7 +136,6 @@
                                                     role="menuitem">
                                                     Food
                                                 </a>
-
                                             </div>
                                         </div>
                                     </div>
@@ -143,7 +143,7 @@
                                         <label for="Search" class="sr-only"> Search </label>
 
                                         <input type="text" id="Search" placeholder="Search for..."
-                                            class=" rounded-md border-gray-200 py-2.5 pe-10 shadow-sm ps-2 sm:text-sm w-[350px]" />
+                                            class="rounded-md border-gray-200 py-2.5 pe-10 shadow-sm ps-2 sm:text-sm w-[350px]" />
 
                                         <span class="absolute inset-y-0 end-0 grid w-10 place-content-center">
                                             <button type="button" class="text-gray-600 hover:text-gray-700">
@@ -165,7 +165,7 @@
                             <button type="button" class="relative p-1">
                                 <span class="absolute -inset-1.5"></span>
                                 <span class="sr-only">View notifications</span>
-                                <img src="./src/images/trolly.png" alt="icon" width="22px">
+                                <img src="./src/images/trolly.png" alt="icon" width="22px" />
                             </button>
 
                             <!-- Profile dropdown -->
@@ -179,7 +179,7 @@
                                         <span class="sr-only">Open user menu</span>
                                         <img class="h-8 w-8 rounded-full"
                                             src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                            alt="">
+                                            alt="" />
                                     </button>
                                 </div>
 
@@ -200,7 +200,6 @@
 
                 <div class="hidden sm:hidden" id="mobile-menu">
                     <div class="space-y-1 px-2 pb-3 pt-2 bg-white shadow-md">
-
                         <div class="relative">
                             <label for="Search" class="sr-only"> Search </label>
 
@@ -224,7 +223,6 @@
             </nav>
         </div>
     </div>
-
     <main class="px-[10px] sm:px-10 mw:w-[1440px] mx-auto overflow-hidden">
         <section>
             <div class="swiper w-full h-[130px] sm:h-[300px] rounded-[7px]">
@@ -247,13 +245,12 @@
             </div>
         </section>
         <section class="mt-6 flex gap-3 items-center">
-            <figure>
-                <img src="./src/images/disc.jpg" alt="discount-image" width="400px">
+            <figure class="hidden sm:block">
+                <img src="./src/images/disc.jpg" alt="discount-image" width="400px" />
             </figure>
             <div class="border-2 w-full p-4 rounded-md">
-                <div class="border-b-2 ">
-
-                    <div class="flex justify-between">
+                <div class="border-b-2">
+                    <div class="flex justify-between items-center sm:items-stretch">
                         <h2 class="text-[20px] font-semibold">Bills and Utility</h2>
                         <a class="inline-flex items-center gap-2 rounded-lg border border-black border-2 bg-transparent px-3 py-2 text-black focus:outline-none focus:ring active:text-indigo-500"
                             href="#">
@@ -266,12 +263,12 @@
                             </svg>
                         </a>
                     </div>
-                    <ul class="flex gap-7 mb-3">
+                    <ul class="flex gap-4 mt-2 pb-3 sm:pb-0 sm:mt-0 sm:gap-7 sm:mb-3 overflow-x-scroll sm:overflow-hidden text-[14px]">
                         <li><a href="">Balance</a></li>
                         <li><a href="">Topup</a></li>
                         <li><a href="">Internet</a></li>
                         <li><a href="">Tickets</a></li>
-                        <li><a href="">Data Package</a></li>
+                        <li><a href="">Data</a></li>
                         <li><a href="">Pulse</a></li>
                         <li><a href="">Voucher</a></li>
                     </ul>
@@ -279,14 +276,16 @@
                 <div>
                     <div class="grid grid-cols-2 gap-5 my-5">
                         <div>
-                            <label for="codeTrsction" class="block text-md font-medium text-gray-700"> Code Transaction
+                            <label for="codeTrsction" class="block text-md font-medium text-gray-700">
+                                Code Transaction
                             </label>
 
                             <input type="email" id="codeTrsction" placeholder="Ex: 276NHVF387XN3487"
                                 class="mt-1 w-full rounded-md border-gray-200 py-2 px-3 border-2 shadow-sm sm:text-sm" />
                         </div>
                         <div>
-                            <label for="codeTrsction" class="block text-md font-medium text-gray-700"> Payment Amount
+                            <label for="codeTrsction" class="block text-md font-medium text-gray-700">
+                                Payment Amount
                             </label>
 
                             <input type="email" id="codeTrsction" placeholder="Ex : $100.000"
@@ -314,22 +313,44 @@
             </div>
         </section>
         <section class="mt-16">
-            <div class="flex justify-between items-center">
+            <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-2">
                 <h2 class="text-[27px] font-semibold">November Super Flash Sale⚡</h2>
                 <div class="flex items-center">
                     <p class="me-3">Ends in</p>
                     <div class="flex gap-2 items-center" id="countdown">
-                        <div class="bg-[#52057B] px-2 py-1 text-white rounded-md" id="hours">06</div>:
-                        <div class="bg-[#52057B] px-2 py-1 text-white rounded-md" id="minutes">30</div>:
-                        <div class="bg-[#52057B] px-2 py-1 text-white rounded-md" id="seconds">50</div>
+                        <div class="bg-[#52057B] px-2 py-1 text-white rounded-md" id="hours">
+                            06
+                        </div>
+                        :
+                        <div class="bg-[#52057B] px-2 py-1 text-white rounded-md" id="minutes">
+                            30
+                        </div>
+                        :
+                        <div class="bg-[#52057B] px-2 py-1 text-white rounded-md" id="seconds">
+                            50
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="flex lg:gap-5 mw:gap-5 items-center flex-wrap justify-start mt-8" id="productsFS">
-
+            <swiper-container class="mySwiper mt-8" scrollbar-hide="false" id="productsFS">
+            </swiper-container>
+        </section>
+        <section class="mt-16">
+            <div class="flex items-center gap-3 flex-col sm:flex-row">
+                <h2 class="text-[27px] font-semibold">Now Easier to Choose</h2>
+                <span class="bg-purple-100 py-1 px-2 rounded-sm">New Features</span>
             </div>
-
+            <swiper-container class="mySwiper mt-8" scrollbar-hide="false" id="cardChoose">
+            </swiper-container>
+        </section>
+        <section class="mt-16">
+            <div class="flex items-center gap-3">
+                <h2 class="text-[27px] font-semibold">Today Is Only For You</h2>
+            </div>
+            <div class="grid gap-2 grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 sm:gap-7 mt-8" id="products">
+                
+            
+            </div>
         </section>
     </main>
 
@@ -339,14 +360,14 @@
                 <div>
                     <div class="text-black">
                         <figure class="flex items-center gap-2">
-                            <img src="./src/images/icon.png" alt="icon-zero">
+                            <img src="./src/images/icon.png" alt="icon-zero" />
                             <figcaption class="text-[25px] font-semibold">Zero</figcaption>
                         </figure>
                     </div>
 
                     <p class="mt-4 max-w-xs text-gray-500">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non cupiditate quae nam
-                        molestias.
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse non
+                        cupiditate quae nam molestias.
                     </p>
 
                     <ul class="mt-8 flex gap-6">
@@ -396,23 +417,33 @@
 
                         <ul class="mt-6 space-y-4 text-sm">
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    1on1 Coaching
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Company Review </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Company Review
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Accounts Review
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    HR Consulting
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    SEO Optimisation
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -422,15 +453,21 @@
 
                         <ul class="mt-6 space-y-4 text-sm">
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> About </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    About
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Meet the Team </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Meet the Team
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Accounts Review
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -440,15 +477,21 @@
 
                         <ul class="mt-6 space-y-4 text-sm">
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Contact
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> FAQs </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    FAQs
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Live Chat </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Live Chat
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -458,30 +501,58 @@
 
                         <ul class="mt-6 space-y-4 text-sm">
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Accessibility </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Accessibility
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Returns Policy </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Returns Policy
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Refund Policy </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Refund Policy
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Hiring Statistics </a>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75">
+                                    Hiring Statistics
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <p class="text-xs text-gray-500">&copy; 2024. Zero. All rights reserved.</p>
+            <p class="text-xs text-gray-500">
+                &copy; 2024. Zero. All rights reserved.
+            </p>
         </div>
     </footer>
 
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const swipers = document.querySelectorAll(".mySwiper");
+            swipers.forEach((swiper) => {
+                Object.assign(swiper, {
+                    slidesPerView: 1,
+                    breakpoints: {
+                        640: {
+                            slidesPerView: 4,
+                        },
+                    },
+                });
+                swiper.initialize();
+            });
+        });
+    </script>
+
     <script type="module">
         import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
         const swiper = new Swiper(".swiper", {
