@@ -1,5 +1,3 @@
-// alert("Content Baru 70% & responsive mobile baru navbar & footer.");
-
 const dropdownClicked = (dropdownType) => {
   console.log("clicked");
   const btn = document.getElementById("dropdownItem");
@@ -148,7 +146,7 @@ const dataProducts = [
     name: "Neve Strix Pro L123 (2021) - TP399K 1TB",
     category: "Computer & Laptop",
     image: "./src/images/product-images/Image (5).png",
-    price: 467.50,
+    price: 467.5,
     rating: 4.7,
     location: "Kota Solo",
     sold: 389,
@@ -157,7 +155,7 @@ const dataProducts = [
     name: "Neve Strix Pro L123 (2021) - TP399K 1TB",
     category: "Computer & Laptop",
     image: "./src/images/product-images/Image (5).png",
-    price: 467.50,
+    price: 467.5,
     rating: 4.7,
     location: "Kota Solo",
     sold: 389,
@@ -166,7 +164,7 @@ const dataProducts = [
     name: "Neve Strix Pro L123 (2021) - TP399K 1TB",
     category: "Computer & Laptop",
     image: "./src/images/product-images/Image (5).png",
-    price: 467.50,
+    price: 467.5,
     rating: 4.7,
     location: "Kota Solo",
     sold: 389,
@@ -175,7 +173,7 @@ const dataProducts = [
     name: "Neve Strix Pro L123 (2021) - TP399K 1TB",
     category: "Computer & Laptop",
     image: "./src/images/product-images/Image (5).png",
-    price: 467.50,
+    price: 467.5,
     rating: 4.7,
     location: "Kota Solo",
     sold: 389,
@@ -184,7 +182,7 @@ const dataProducts = [
     name: "Neve Strix Pro L123 (2021) - TP399K 1TB",
     category: "Computer & Laptop",
     image: "./src/images/product-images/Image (5).png",
-    price: 467.50,
+    price: 467.5,
     rating: 4.7,
     location: "Kota Solo",
     sold: 389,
@@ -193,7 +191,7 @@ const dataProducts = [
     name: "Neve Strix Pro L123 (2021) - TP399K 1TB",
     category: "Computer & Laptop",
     image: "./src/images/product-images/Image (5).png",
-    price: 467.50,
+    price: 467.5,
     rating: 4.7,
     location: "Kota Solo",
     sold: 389,
@@ -202,7 +200,7 @@ const dataProducts = [
     name: "Neve Strix Pro L123 (2021) - TP399K 1TB",
     category: "Computer & Laptop",
     image: "./src/images/product-images/Image (5).png",
-    price: 467.50,
+    price: 467.5,
     rating: 4.7,
     location: "Kota Solo",
     sold: 389,
@@ -211,12 +209,12 @@ const dataProducts = [
     name: "Neve Strix Pro L123 (2021) - TP399K 1TB",
     category: "Computer & Laptop",
     image: "./src/images/product-images/Image (5).png",
-    price: 467.50,
+    price: 467.5,
     rating: 4.7,
     location: "Kota Solo",
     sold: 389,
   },
-]
+];
 
 const dataCardChoose = [
   {
@@ -251,10 +249,54 @@ const dataCardChoose = [
   },
 ];
 
+const dataShops = [
+  {
+    name: "Super Shop",
+    image: "./src/images/shop-images/shop1.png",
+    products: 3450,
+    followed: 1000,
+    sold: 2545,
+  },
+  {
+    name: "Nine Fashion",
+    image: "./src/images/shop-images/shop2.png",
+    products: 1420,
+    followed: 720,
+    sold: 1205,
+  },
+  {
+    name: "Utopia Store",
+    image: "./src/images/shop-images/shop3.png",
+    products: 2350,
+    followed: 1500,
+    sold: 1735,
+  },
+  {
+    name: "Music Zerna",
+    image: "./src/images/shop-images/shop4.png",
+    products: 500,
+    followed: 800,
+    sold: 340,
+  },
+  {
+    name: "Amara Glow",
+    image: "./src/images/shop-images/shop5.png",
+    products: 5021,
+    followed: 9730,
+    sold: 5125,
+  },
+];
+
 let categoryContainer = document.getElementById("categoriesContainer");
 let FlashSaleContainer = document.getElementById("productsFS");
 let cardChooseContainer = document.getElementById("cardChoose");
 let cardProductsContainer = document.getElementById("products");
+let recommendContainer = document.getElementById("productsRecommend");
+let shopContainer = document.getElementById("bestShop");
+
+dataShops.forEach((data) => {
+  shopContainer.innerHTML += shopCardComponent(data);
+});
 
 dataCategories.forEach((data) => {
   categoryContainer.innerHTML += categoryComponent(data.image, data.category);
@@ -279,10 +321,12 @@ dataCardChoose.forEach((data) => {
     data.gradient
   );
 });
-
 dataProducts.forEach((data) => {
-  cardProductsContainer.innerHTML += cardProductComponent(data)
-})
+  cardProductsContainer.innerHTML += cardProductComponent(data);
+});
+dataProducts.forEach((data) => {
+  recommendContainer.innerHTML += cardProductComponent(data);
+});
 
 function categoryComponent(image, category) {
   return `<figure class="flex flex-col items-center gap-2 w-[60px] hover:cursor-pointer">
@@ -379,7 +423,42 @@ function cardChooseComponent(title, icon, stock, gradient) {
 `;
 }
 
-const countdownTime = { hours: 7, minutes: 0, seconds: 0 };
+function shopCardComponent(shop) {
+  return `
+  <swiper-slide>
+  <div class="w-[300px] h-[385px] border-2 rounded-lg">
+  <figure class="flex flex-col items-center">
+      <img src="${shop.image}" alt="shop" class="w-full">
+      <div class="flex flex-col items-center">
+          <figcaption class="text-[20px] font-semibold">${shop.name}</figcaption>
+          <figure class="flex items-center gap-1">
+              <figcaption class="text-blue-600 font-semibold">verification</figcaption>
+              <img src="./src/images/icons/verify.png" alt="verify" >
+          </figure>
+      </div>
+  </figure>
+  <div class="flex gap-2 justify-center items-center mt-7">
+      <div class="flex flex-col items-center px-2">
+          <h5 class="opacity-50 font-semibold">Product</h5>
+          <p class="font-semibold">${shop.products}</p>
+      </div>
+      <hr class="border-[2px] border-gray-500 w-[1px] h-[35px] rounded-md" />
+      <div class="flex flex-col items-center px-2">
+          <h5 class="opacity-50 font-semibold">Followed</h5>
+          <p class="font-semibold">${shop.followed}</p>
+      </div>
+      <hr class="border-[2px] border-gray-500 w-[1px] h-[35px] rounded-md" />
+      <div class="flex flex-col items-center px-2">
+          <h5 class="opacity-50 font-semibold">Sold</h5>
+          <p class="font-semibold">${shop.sold}</p>
+      </div>
+  </div>
+</div>
+</swiper-slide>
+`;
+}
+
+const countdownTime = { hours: 24, minutes: 0, seconds: 0 };
 
 const countDownDate =
   new Date().getTime() +
