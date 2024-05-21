@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+    var loadingContainer = document.getElementById("loading");
+    var contentContainer = document.getElementById("content");
+
+    loadingContainer.classList.add("hidden");
+    contentContainer.classList.remove("hidden");
+  }, 1000);
+});
+
 const dropdownClicked = (dropdownType) => {
   console.log("clicked");
   const btn = document.getElementById("dropdownItem");

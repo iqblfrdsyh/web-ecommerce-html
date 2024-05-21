@@ -36,6 +36,10 @@
 </head>
 
 <body>
+    <figure class="flex justify-center items-center h-[100vh] overflow-hidden" id="loading">
+        <img src="./src/loading.gif"></img>
+    </figure>
+    <div class="hidden" id="content">
     <div class="mb-[80px] sm:mb-[150px]">
         <div class="fixed w-full top-0 z-50">
             <div
@@ -355,7 +359,7 @@
             <img src="./src/images/banner/Banner.png" alt="banner" class="my-8">
         </figure>
         <section class="mt-5">
-            <div class="flex items-center gap-3 text-center sm:text-left">
+            <div class="flex items-center gap-3 justify-center sm:justify-start">
                 <h2 class="text-[27px] font-semibold">Best Shop at The Moment</h2>
             </div>
             <div class="mt-7">
@@ -552,6 +556,8 @@
             </p>
         </div>
     </footer>
+    </div>
+
 
     <script src="./script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
