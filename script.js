@@ -470,20 +470,24 @@ function shopCardComponent(shop) {
 
 const countdownTime = { hours: 24, minutes: 0, seconds: 0 };
 
-const countDownDate =
-  new Date().getTime() +
-  (countdownTime.hours * 3600 +
-    countdownTime.minutes * 60 +
-    countdownTime.seconds) *
-    1000;
+const getNewCountdownDate = () => {
+  return (
+    new Date().getTime() +
+    (countdownTime.hours * 3600 +
+      countdownTime.minutes * 60 +
+      countdownTime.seconds) *
+      1000
+  );
+};
+
+let countDownDate = getNewCountdownDate();
 
 const countdownFunction = setInterval(() => {
   const now = new Date().getTime();
   const distance = countDownDate - now;
 
   if (distance < 0) {
-    clearInterval(countdownFunction);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
+    countDownDate = getNewCountdownDate();
     return;
   }
 
